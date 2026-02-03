@@ -38,6 +38,14 @@ LaTeX provides a high-quality typesetting system; it includes features designed 
 6. Once the action is completed, you can download the generated artifact from the "Artifacts" section in the "Actions" tab of your forked repository.
 7. Unzip the file and start using your professional resume!
 
+### Local Compilation with Docker
+
+To compile the resume locally using Docker, run the following command in your project directory:
+
+```bash
+docker run --rm -i -v $(pwd):/data mingc/latex pdflatex main.tex
+```
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
@@ -49,3 +57,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ---
 
 💌 _Maintained by [Jay Bhavsar](https://jay.is-savvy.dev/)_
+docker run --rm -i -v $(pwd):/data mingc/latex pdflatex main.tex    
