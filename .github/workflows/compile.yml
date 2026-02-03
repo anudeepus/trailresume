@@ -5,6 +5,7 @@ on:
     branches: 
       - main
       - develop
+      - lead
     tags:
        - '*'
   pull_request:
